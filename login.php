@@ -10,7 +10,7 @@
         <meta name="description" content="">
         <meta name="author" content="ronindesign">
     
-        <title>Login :: Anonys</title>
+        <title>Login :: TEIA</title>
 
         <!-- FAVICON -->
         <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png"/>
@@ -50,7 +50,7 @@
                             <div class="logo">
                                 <img src="cadastro/images/logo-hacked-mini-black.png" class="img-fluid img-pointer" />
                                 <ul>
-                                    <li><a class="baixologo" href="index.html">Home</a></li>
+                                    <li><a class="baixologo" href="login.php">Home</a></li>
                                     <li><a class="baixologo" href="login.php">Login</a></li>
                                 </ul>
                             </div>
@@ -58,7 +58,7 @@
                         <br><br>
 
                         <label for="inputEmail" class="sr-only">Email</label>
-                        <input type="text" name="username" id="username" class="form-control" required="required" maxlength="20" pattern="[A-Za-z0-9_?]{1,20}" placeholder="Username" autofocus="autofocus" />
+                        <input type="text" name="email" id="email" class="form-control" required="required" maxlength="50" placeholder="E-mail" autofocus="autofocus" />
                         <label for="inputPassword" class="sr-only">Senha</label>
                         <input type="password" name="password" id="password" class="form-control" placeholder="Password" required="required" maxlength="100" pattern=".{6,100}" />
                         <button class="btn btn-lg btn-danger btn-block btn-color submit" type="submit" name="btnLogin" value="Login">Login</button>
@@ -66,7 +66,8 @@
                         <label for="keeplogged" class="keeplogged" >Remember me</label>
                         
                     </form>
-
+                    <button onclick="cadastrar()" class="btn btn-lg btn-danger btn-block btn-color btn-cad" type="submit" name="btnLogin" value="cadastrar">Cadastrar</button>
+                        <br>
                     <p class="text-center text-danger">
                         <?php 
                             if(isset($_SESSION['msg'])){
@@ -86,16 +87,8 @@
 
                     <div class="col-md">
                         <div class="text-center">
-                            <a id="info-cad">
-                                <span class="closed-reg">
-                                    O registro está 
-                                    <span class="register-closed">Fechado</span> 
-                                    no momento. (Atualmente apenas para convidados)
-                                </span>
-                            </a>
-                            <!-- <a id="info-cad" onclick="cadastrar()"><span><strong>CADASTRE-SE</strong></span></a> -->
-                            <br>
-                            <br>
+                        
+                            <!-- <a  onclick="cadastrar()"><span><strong>CADASTRE-SE</strong></span></a> -->
                             <div>
                                 <!--inicio clock-->
                                 <div class="datetime">
@@ -130,7 +123,7 @@
         </script>
 
         <footer id="foot">
-            <span style="color: #fff"> &copy; 2021 <a href="#" class="namefooter"><b>Anonymous Forum</b></a>. Todos os direitos reservados.</span>
+            <span style="color: #fff"> &copy; 2021 <a href="#" class="namefooter"><b>TEIA Formulário</b></a>. Todos os direitos reservados.</span>
         </footer>
         <script src="js/clock.js" type="text/javascript"></script>
   </body>

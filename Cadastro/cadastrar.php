@@ -1,9 +1,9 @@
 <?php
+    include_once 'conexao.php';
 	session_start();
     ob_start();
     $btnCadUsuario = filter_input(INPUT_POST, 'btnCadUsuario', FILTER_SANITIZE_STRING);
     if($btnCadUsuario){
-        include_once 'conexao.php';
         $dados_rc = filter_input_array(INPUT_POST, FILTER_DEFAULT);
 
         $erro = false;
@@ -65,7 +65,7 @@
         <meta name="description" content="">
         <meta name="author" content="ronindesign">
     
-        <title>Cadastro :: Formulario</title>
+        <title>Cadastro :: Formulário</title>
 
         <!-- FAVICON -->
         <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png"/>
@@ -98,9 +98,9 @@
 
                         <div class="text-center">
                             <div class="logo">
-                                <img src="images/logo-hacked-mini-black.png" class="img-fluid img-pointer" />
+                                <img src="images/logo-form.png" class="img-fluid img-pointer" />
                                 <ul>
-                                    <li><a class="baixologo" href="../index.html">Home</a></li>
+                                    <li><a class="baixologo" href="../login.php">Home</a></li>
                                     <li><a class="baixologo" href="../login.php">Login</a></li>
                                 </ul>
                             </div>
@@ -122,12 +122,10 @@
                                 <?php
                                     $result_genero = "SELECT * FROM genero";
                                     $resultado_genero = mysqli_query($conn, $result_genero);
-                                    while($row_genero = mysqli_fetch_assoc($resultado_genero)){
-                                        $_SESSION['generoId'] = $row_genero['id'];
-                                        $_SESSION['generoNome'] = $row_genero['nome'];
+                                    while($row_genero = mysqli_fetch_assoc($resultado_genero)){ ?>
+                                        <option value="<?php echo $row_genero['id']; ?>"><?php echo $row_genero['nome']; ?></option> <?php
                                     }
                                 ?>
-                                <option value="<?php echo $row_genero['id']; ?>"><?php echo $row_genero['nome']; ?></option>
                             </select>
                         </div>
 
@@ -137,17 +135,13 @@
                                 <?php
                                     $result_grauesc = "SELECT * FROM grau_esc";
                                     $resultado_grauesc = mysqli_query($conn, $result_grauesc);
-                                    while($row_grauesc = mysqli_fetch_assoc($resultado_grauesc)){
-                                        $_SESSION['grauId'] = $row_grauesc['id'];
-                                        $_SESSION['grauNome'] = $row_grauesc['nome'];
+                                    while($row_grauesc = mysqli_fetch_assoc($resultado_grauesc)){ ?>
+                                        <option value="<?php echo $row_grauesc['id']; ?>"><?php echo $row_grauesc['nome']; ?></option> <?php
                                     }
                                 ?>
-                                <option value="<?php echo $row_grauesc['id']; ?>"><?php echo $row_grauesc['nome']; ?></option>
+                                
                             </select>
                         </div>
-                        <?php
-                        echo $_SESSION['nivelNome'];
-                        ?>
                         <button class="btn btn-lg btn-danger btn-block btn-color submit" type="submit" name="btnCadUsuario" value="Cadastrar" class="cadastro">Cadastrar</button>
                         
                     </form>
@@ -191,7 +185,7 @@
         </script>
 
         <footer id="foot">
-            <span style="color: #fff"> &copy; 2021 <a href="#" class="namefooter"><b>Anonymous Forum</b></a>. Todos os direitos reservados.</span>
+            <span style="color: #fff"> &copy; 2021 <a href="#" class="namefooter"><b>TEIA Formulário</b></a>. Todos os direitos reservados.</span>
         </footer>
         <script src="../js/clock.js" type="text/javascript"></script>
         <script src="../js/selectitem.js" type="text/javascript"></script>

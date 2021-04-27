@@ -50,7 +50,7 @@
             }
             
             function forum() {
-                window.open("../cliente/forum.php", '_parent');
+                window.open("../cliente/cliente.php", '_parent');
             }
 
             function painel() {
@@ -110,7 +110,7 @@
                         <div class="style-cont-mid">
                             <a><i class="fa fa-strikethrough" style="font-size: 100px"></i></a>
                             <br>
-                            <span style="font-size: 50px">FORUM</span>
+                            <span style="font-size: 50px">FORMULÁRIO</span>
                         </div>
                     </div>
                 </div>
@@ -132,7 +132,7 @@
             <br>
             <br>
         <footer id="foot">
-            <span style="color: #fff"> &copy; 2021 <a href="#" class="namefooter"><b>Anonymous Forum</b></a>. Todos os direitos reservados.</span>
+            <span style="color: #fff"> &copy; 2021 <a href="#" class="namefooter"><b>TEIA Formulário</b></a>. Todos os direitos reservados.</span>
          </footer>
          
         <script src="../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>

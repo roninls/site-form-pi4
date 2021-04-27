@@ -24,7 +24,6 @@
                     $_SESSION['telefone'] = $row_usuario['telefone'];
                     $_SESSION['genero'] = $row_usuario['genero_id'];
                     $_SESSION['grau_esc'] = $row_usuario['grau_esc_id'];
-                    $_SESSION['time'] = $row_usuario['time'];
                     $_SESSION['usuarioNiveisAcessoId'] = $row_usuario['niveis_acesso_id'];
                     if($_SESSION['usuarioNiveisAcessoId'] == "1"){
                         header("Location: administrativo.php"); 

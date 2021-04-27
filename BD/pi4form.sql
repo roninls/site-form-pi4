@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Tempo de geração: 27-Abr-2021 às 04:16
+-- Tempo de geração: 27-Abr-2021 às 05:56
 -- Versão do servidor: 5.7.31
 -- versão do PHP: 7.3.21
 
@@ -95,7 +95,7 @@ CREATE TABLE IF NOT EXISTS `niveis_acessos` (
 
 INSERT INTO `niveis_acessos` (`id`, `nome`, `created`, `modified`) VALUES
 (0, 'Cliente', '2021-04-07 00:00:00', NULL),
-(1, 'TESTANDO', '2021-04-07 00:00:00', NULL);
+(1, 'Administrativo', '2021-04-07 00:00:00', NULL);
 
 -- --------------------------------------------------------
 
@@ -122,7 +122,7 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id`, `nome`, `email`, `senha`, `telefone`, `niveis_acesso_id`, `genero_id`, `grau_esc_id`, `created`) VALUES
-(1, 'LosTSouL', 'anonysbsb@gmail.com', '$2y$10$u8n.CPwuumTQJZ3s00h1z.NZi76LW4iaXNGolk0RZZ2JCiUGvQZ.C', '', 1, 0, 0, '2021-04-11 03:00:00');
+(1, 'Ronin', 'roninls@sempreceub.com', '$2y$10$LHNDbYoB.SUCJ4YvvlyU8eLDwRqDBu0.cY.EpcATvwXEFLRufRRKe', '(61) 9 8565-2243', 1, 1, 7, '2021-04-27 05:50:38');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
