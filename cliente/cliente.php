@@ -8,8 +8,6 @@
     }
 
     if($_SESSION['usuarioNiveisAcessoId'] == "1"){
-        
-    }elseif($_SESSION['usuarioNiveisAcessoId'] == "2"){
 
     }elseif($_SESSION['usuarioNiveisAcessoId'] == "0"){
 
@@ -107,17 +105,7 @@
         </div>
         <!-- End applications -->
 
-        <script type="text/javascript">
-        cookie.set('cookie_test',1,1);
-        if (cookie.get('cookie_test') != null) {
-            cookie.del('cookie_test');
-        } else {
-            $('#no-cookies').show();
-        }
-        </script>
-                </td>
-            </tr>
-        </table>
+        
         <div id="foot">
             <span style="color: #fff"> &copy; 2021 <a href="#" class="namefooter"><b>TEIA Formulário</b></a>. Todos os direitos reservados.</span>
         </div>

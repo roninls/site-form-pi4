@@ -1,7 +1,7 @@
 <?php
-    include_once 'conexao.php';
 	session_start();
     ob_start();
+    include_once("conexao.php");
     $btnCadUsuario = filter_input(INPUT_POST, 'btnCadUsuario', FILTER_SANITIZE_STRING);
     if($btnCadUsuario){
         $dados_rc = filter_input_array(INPUT_POST, FILTER_DEFAULT);
@@ -56,7 +56,7 @@
         }
     }
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="br" lang="br">
     <head>
         <meta charset="utf-8">
@@ -174,15 +174,6 @@
                 </div>
             </div>
         </div>
-        
-        <script type="text/javascript">
-        cookie.set('cookie_test',1,1);
-        if (cookie.get('cookie_test') != null) {
-            cookie.del('cookie_test');
-        } else {
-            $('#no-cookies').show();
-        }
-        </script>
 
         <footer id="foot">
             <span style="color: #fff"> &copy; 2021 <a href="#" class="namefooter"><b>TEIA Formulário</b></a>. Todos os direitos reservados.</span>
