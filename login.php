@@ -48,7 +48,7 @@
 
                         <div class="text-center">
                             <div class="logo">
-                                <img src="cadastro/images/logo-hacked-mini-black.png" class="img-fluid img-pointer" />
+                                <img src="img/login.png" class="img-fluid img-pointer" width="60%"/>
                                 <ul>
                                     <li><a class="baixologo" href="login.php">Home</a></li>
                                     <li><a class="baixologo" href="login.php">Login</a></li>

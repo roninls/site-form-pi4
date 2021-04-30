@@ -4,6 +4,7 @@
     include_once("conexao.php");
     $btnCadUsuario = filter_input(INPUT_POST, 'btnCadUsuario', FILTER_SANITIZE_STRING);
     if($btnCadUsuario){
+        
         $dados_rc = filter_input_array(INPUT_POST, FILTER_DEFAULT);
 
         $erro = false;
@@ -98,7 +99,7 @@
 
                         <div class="text-center">
                             <div class="logo">
-                                <img src="images/logo-form.png" class="img-fluid img-pointer" />
+                                <img src="../img/login.png" class="img-fluid img-pointer" width="60%"/>
                                 <ul>
                                     <li><a class="baixologo" href="../login.php">Home</a></li>
                                     <li><a class="baixologo" href="../login.php">Login</a></li>
