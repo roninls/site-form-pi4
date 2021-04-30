@@ -333,3 +333,15 @@ input[type="checkbox"] {
         transform: rotate(360deg);
     }
 }
+
+@media all and (min-width: 1024px) {
+    .img-mobile {
+		max-width: 15%!important;
+    }
+}
+
+@media all and (max-width: 1024px) {
+    .img-mobile {
+		margin-top: 0px!important;
+    }
+}

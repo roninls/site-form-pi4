@@ -72,7 +72,7 @@
 
                     <div class="col">
                         <div class="img-fluid">
-                            <img id="image" src="../img/logo-white.png" class="img-fluid img-pointer" width="188" height="50"/>
+                            <img id="image" src="../img/login.png" class="img-fluid img-pointer img-mobile"/>
                         </div>
                     </div>
                     
@@ -110,7 +110,7 @@
                         <div class="style-cont-mid">
                             <a><i class="fa fa-strikethrough" style="font-size: 100px"></i></a>
                             <br>
-                            <span style="font-size: 50px">FORMULÁRIO</span>
+                            <span style="font-size: 50px">FORM</span>
                         </div>
                     </div>
                 </div>

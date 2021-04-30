@@ -16,12 +16,16 @@
         header("Location: ../cadastro/restrito.php"); 
     }
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<html>
     <head>
         <title><?php echo "CLIENTE :: ".$_SESSION['nome']." "?></title>
-        <meta charset="utf-8"/>
         <meta http-equiv="X-UA-Compatible" content="chrome=1;IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content=""/>
+        <meta name="keywords" content="ronindesign"/>
+        <meta name="author" content="ronindesign"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
         
         <!-- FAVICON -->
         <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.png"/>
@@ -34,84 +38,90 @@
         <link href="../css/animate.min.css" rel="stylesheet" type="text/css" />
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
-        <script src="../cadastro/js/sizzle.js" type="text/javascript"></script>
-        <script src="../cadastro/js/script_start.js" type="text/javascript"></script>
-        <script src="../cadastro/js/class_ajax.js" type="text/javascript"></script>
-        <script src="../cadastro/js/class_cookie.js" type="text/javascript"></script>
-        <script src="../cadastro/js/class_storage.js" type="text/javascript"></script>
-        <script src="../cadastro/js/global.js" type="text/javascript"></script>
-        <script src="../cadastro/js/jquery.js" type="text/javascript"></script>
-
-        <!-- PLUGIN -->
-        <link href="css/plugin/settings.css" rel="stylesheet" type="text/css" media="screen" />
+        <script src="js/sizzle.js" type="text/javascript"></script>
+        <script src="js/script_start.js" type="text/javascript"></script>
+        <script src="js/class_ajax.js" type="text/javascript"></script>
+        <script src="js/class_storage.js" type="text/javascript"></script>
+        <script src="js/global.js" type="text/javascript"></script>
+        <script src="../js/jquery-1.11.2.min.js" type="text/javascript"></script>
 
         <script type="text/javascript">
-            function login() {
-            window.open("login.php");
-        }
+            function logout() {
+            window.open("sair.php", '_parent');
+            }
+            
+            function forum() {
+                window.open("../cliente/cliente.php", '_parent');
+            }
+
+            function painel() {
+                window.open("../cliente/painel.php", '_parent');
+            }
+
         </script>
-        
-
-        <style rel="stylesheet" type="text/css">
-            #nav-logout {
-                align: right;
-                border-style: solid!important;
-                border-color: #5c0eb4!important;
-                border-radius: 3px!important;
-                border-width: 2px!important;
-                }
-        </style>
-
     </head>
-
     <body>
-         <!-- Site preloader -->
-         <section id="preloader">
+        <!-- Site preloader -->
+        <section id="preloader">
             <div class="site-spinner"></div>
         </section>
         <!-- End Site preloader -->
-        <div id="top-head">
-                <div id="rownav">
-                    <div class="row">
 
-                        <div class="col">
-                            <div class="img-fluid">
-                                <img id="image" src="../img/logo-white.png" class="img-fluid img-pointer" width="188" height="50" />
-                            </div>
+        <div id="top-head">
+            <div id="rownav">
+                <div class="row">
+
+                    <div class="col">
+                        <div class="img-fluid">
+                            <img id="image" src="../img/login.png" class="img-fluid img-pointer img-mobile"/>
                         </div>
+                    </div>
+                    
+                    <div class="col ola-php">
+                        <span>
+                            <?php
+                                echo "Olá <span style='color:#5c0eb4; font-weight: 600;'>".$_SESSION['nome']."</span>, Bem-Vindo! - <span style='color:#5c0eb4; font-weight: 600;'>".$_SESSION['nivelNome']."</span> ";
+                            ?>
+                        </span>
+                    </div>
                         
-                        <div class="col ola-php">
-                            <span>
-                                <?php
-                                    echo "Olá <span style='color:#5c0eb4; font-weight: 600;'>".$_SESSION['nome']."</span>, Bem-Vindo! - <span style='color:#5c0eb4; font-weight: 600;'>".$_SESSION['nivelNome']."</span>";
-                                ?>
-                            </span>
-                        </div>
-                            
-                        <div id="logout" class="col">
-                            <span>
-                                <a href="../cadastro/sair.php" class="logout">[Logout]</a>
-                            </span>
-                        </div>
+                    <div id="logout" class="col">
+                        <span>
+                            <a href="sair.php" class="logout">[Logout]</a>
+                        </span>
                     </div>
                 </div>
             </div>
-        
-        <!-- Applications -->
-        <div>
-            <a href="https://cgpeers.to/login.php" target="_self">
-            <img src="../img/logos/cgpeers.png">
-            </a>
         </div>
-        <!-- End applications -->
 
-        
-        <div id="foot">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-12 text-center">
+                    <h2 class="title-pg color-white"><span class="text-light" style="color: #fff!important;">Preencha o </span>Formulário</h2>
+                </div>
+                <div class="w-100"></div>
+                
+
+            </div>
+        </div>
+        <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        <footer id="foot">
             <span style="color: #fff"> &copy; 2021 <a href="#" class="namefooter"><b>TEIA Formulário</b></a>. Todos os direitos reservados.</span>
-        </div>
-
+         </footer>
+         
         <script src="../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
         <script src="../js/plugins/jquery.magnific-popup.min.js" type="text/javascript"></script>
         <script src="../js/clock.js" type="text/javascript"></script>
+
     </body>
 </html>
