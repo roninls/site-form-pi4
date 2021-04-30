@@ -38,11 +38,6 @@
         <link href="../css/animate.min.css" rel="stylesheet" type="text/css" />
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
-        <script src="js/sizzle.js" type="text/javascript"></script>
-        <script src="js/script_start.js" type="text/javascript"></script>
-        <script src="js/class_ajax.js" type="text/javascript"></script>
-        <script src="js/class_storage.js" type="text/javascript"></script>
-        <script src="js/global.js" type="text/javascript"></script>
         <script src="../js/jquery-1.11.2.min.js" type="text/javascript"></script>
 
         <script type="text/javascript">
@@ -87,7 +82,7 @@
                         
                     <div id="logout" class="col">
                         <span>
-                            <a href="sair.php" class="logout">[Logout]</a>
+                            <a href="../cadastro/sair.php" class="logout">[Logout]</a>
                         </span>
                     </div>
                 </div>

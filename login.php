@@ -22,12 +22,6 @@
         <link href="css/signin.css" rel="stylesheet">
 
         <!-- JS -->
-        <script src="cadastro/js/sizzle.js" type="text/javascript"></script>
-        <script src="cadastro/js/script_start.js" type="text/javascript"></script>
-        <script src="cadastro/js/class_ajax.js" type="text/javascript"></script>
-        <script src="cadastro/js/class_cookie.js" type="text/javascript"></script>
-        <script src="cadastro/js/class_storage.js" type="text/javascript"></script>
-        <script src="cadastro/js/global.js" type="text/javascript"></script>
         <script src="cadastro/js/jquery.js" type="text/javascript"></script>
 
         <script>
