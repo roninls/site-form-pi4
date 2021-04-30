@@ -22,7 +22,7 @@
         <link href="css/signin.css" rel="stylesheet">
 
         <!-- JS -->
-        <script src="cadastro/js/jquery.js" type="text/javascript"></script>
+        <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
 
         <script>
             function cadastrar(){
@@ -106,15 +106,6 @@
                 </div>
             </div>
         </div>
-        
-        <script type="text/javascript">
-        cookie.set('cookie_test',1,1);
-        if (cookie.get('cookie_test') != null) {
-            cookie.del('cookie_test');
-        } else {
-            $('#no-cookies').show();
-        }
-        </script>
 
         <footer id="foot">
             <span style="color: #fff"> &copy; 2021 <a href="#" class="namefooter"><b>TEIA Formulário</b></a>. Todos os direitos reservados.</span>

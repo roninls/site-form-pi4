@@ -69,9 +69,9 @@
         <title>Cadastro :: Formulário</title>
 
         <!-- FAVICON -->
-        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png"/>
-        <link rel="icon" type="image/png" href="img/favicon.png"/>
-        <link rel="apple-touch-icon" href="img/favicon.png"/>
+        <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.png"/>
+        <link rel="icon" type="image/png" href="../img/favicon.png"/>
+        <link rel="apple-touch-icon" href="../img/favicon.png"/>
 
         <!-- CSS -->
         <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
