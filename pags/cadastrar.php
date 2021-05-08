@@ -1,7 +1,7 @@
 <?php
 	session_start();
     ob_start();
-    include_once("conexao.php");
+    include_once("../cadastro/conexao.php");
     $btnCadUsuario = filter_input(INPUT_POST, 'btnCadUsuario', FILTER_SANITIZE_STRING);
     if($btnCadUsuario){
         
@@ -50,7 +50,7 @@
             $resultado_usuario = mysqli_query($conn, $result_usuario);
             if(mysqli_insert_id($conn)){
                 $_SESSION['msgcad'] = "Usuário cadastrado com Sucesso";
-                header("Location: ../login.php");
+                header("Location: ../index.php");
             }else{
                 $_SESSION['msg'] = "Erro ao cadastrar o usuário";
             }
@@ -79,7 +79,7 @@
 
         <!-- JS -->
         <script src="../js/mtel.js" type="text/javascript"></script>
-        <script src="js/jquery.js" type="text/javascript"></script>
+        <script src="../js/jquery-1.11.2.min.js" type="text/javascript"></script>
 
     </head>
     
@@ -101,8 +101,8 @@
                             <div class="logo">
                                 <img src="../img/login.png" class="img-fluid img-pointer" width="60%"/>
                                 <ul>
-                                    <li><a class="baixologo" href="../login.php">Home</a></li>
-                                    <li><a class="baixologo" href="../login.php">Login</a></li>
+                                    <li><a class="baixologo" href="../index.php">Home</a></li>
+                                    <li><a class="baixologo" href="../index.php">Login</a></li>
                                 </ul>
                             </div>
                         </div>

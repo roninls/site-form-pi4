@@ -366,3 +366,22 @@ input #keeplogged {
   max-width: 28%;
   margin: 0 auto;
 }
+
+h2 {
+  font-size: 28px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.color-white {
+  color: #fff;
+}
+
+.title-pg {
+  margin-bottom: 15px;
+  font-weight: 800;
+}
+
+.text-light {
+  font-weight: 300;
+}

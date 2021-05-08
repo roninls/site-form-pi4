@@ -26,16 +26,16 @@
                     $_SESSION['grau_esc'] = $row_usuario['grau_esc_id'];
                     $_SESSION['usuarioNiveisAcessoId'] = $row_usuario['niveis_acesso_id'];
                     if($_SESSION['usuarioNiveisAcessoId'] == "1"){
-                        header("Location: administrativo.php"); 
+                        header("Location: ../pags/administrativo.php"); 
                     }elseif($_SESSION['usuarioNiveisAcessoId'] == "2"){
-                        header("Location: ../cliente/cliente.php");
+                        header("Location: ../pags/cliente.php");
                     }
                     else{
-                        header("Location: ../cliente/cliente.php");
+                        header("Location: ../pags/cliente.php");
                     } 
                 }else{
                     $_SESSION['msg'] = "Login ou Senha incorreto!";
-                    header("Location: ../login.php");
+                    header("Location: ../index.php");
                 }
             }
             
@@ -50,10 +50,10 @@
 
         }else{
             $_SESSION['msg'] = "Login ou Senha incorreto!";
-            header("Location: ../login.php");
+            header("Location: ../index.php");
         }
     }else{
         $_SESSION['msg'] = "Página não encontrada!";
-        header("Location: ../login.php");
+        header("Location: ../index.php");
     }
 ?>

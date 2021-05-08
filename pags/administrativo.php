@@ -4,7 +4,7 @@
         
     }else{
         $_SESSION['msg'] = "Área Restrita";
-        header("Location: ../login.php");
+        header("Location: ../index.php");
     }
 
     if($_SESSION['usuarioNiveisAcessoId'] == "1"){
@@ -12,7 +12,7 @@
     }
     else{
         $_SESSION['msg'] = "Área Restrita";
-        header("Location: restrito.php");
+        header("Location: ../cadastro/restrito.php");
     } 
 
 ?>
@@ -31,7 +31,7 @@
         <link rel="icon" type="image/png" href="../img/favicon.png"/>
         <link rel="apple-touch-icon" href="../img/favicon.png"/>
 
-        <link href="css/login.css" rel="stylesheet" type="text/css" />
+        <link href="../cadastro/css/login.css" rel="stylesheet" type="text/css" />
         <link href="../css/style.css" rel="stylesheet" type="text/css" />
         <link href="../bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
         <link href="../css/animate.min.css" rel="stylesheet" type="text/css" />
@@ -41,15 +41,15 @@
 
         <script type="text/javascript">
             function logout() {
-            window.open("sair.php", '_parent');
+            window.open("../cadastro/sair.php", '_parent');
             }
             
             function forum() {
-                window.open("../cliente/cliente.php", '_parent');
+                window.open("../pags/cliente.php", '_parent');
             }
 
             function painel() {
-                window.open("../cliente/painel.php", '_parent');
+                window.open("../pags/painel.php", '_parent');
             }
 
         </script>
@@ -81,7 +81,7 @@
                         
                     <div id="logout" class="col">
                         <span>
-                            <a href="sair.php" class="logout">[Logout]</a>
+                            <a onclick="logout()" class="logout">[Logout]</a>
                         </span>
                     </div>
                 </div>
@@ -97,7 +97,7 @@
             <div class="row">
 
                 <div class="col-md-12 text-center">
-                    <h2 class="title-pg color-white"><span class="text-light" style="color: #fff!important;">Para onde </span>deseja ir:</h2>
+                    <h2 class="title-pg color-white"><span class="text-light">Para onde </span>deseja ir:</h2>
                 </div>
                 <div class="w-100"></div>
                 <div class="col">
