@@ -17,12 +17,12 @@
     <button class="btn btn-lg btn-danger btn-block btn-color submit" type="submit" name="btnRec" value="Rec">Recuperar Senha</button>
     <input type="hidden" name="env" value="form">
     
+    <p class="text-center text-success">
+        <?php
+            echo verifica_dados($conn);
+        ?>
+    </p>
 </form>
-<p class="text-center text-success">
-    <?php
-        echo verifica_dados($conn);
-    ?>
-</p>
 
 <div class="col-md">
     <div class="text-center">
@@ -47,4 +47,3 @@
         </div>
     </div>
 </div>
-

@@ -29,8 +29,9 @@
     </head>
     
     <body onload="initClock()">
-        <div id="head"></div>
+        <nav id="head"></nav>
         <div class="container">
+        
             <div class="centralizar">
                 <div class="col-md">    
                     <?php
@@ -47,7 +48,7 @@
                 </div>
             </div>
         </div>
-
+        
         <footer id="foot">
             <span style="color: #fff"> &copy; 2021 <a href="#" class="namefooter"><b>TEIA Formulário</b></a>. Todos os direitos reservados.</span>
         </footer>

@@ -1,6 +1,11 @@
+
 <script type="text/javascript">
     function cadastrar() {
     window.open("pags/cadastrar.php", '_parent');
+    }
+
+    function esquecisenha() {
+    window.open("?pagina=recuperar", '_parent');
     }
 </script>
 
@@ -23,13 +28,14 @@
     <input type="password" name="password" id="password" class="form-control" placeholder="Password" required="required" maxlength="100" pattern=".{6,100}" />
     <button class="btn btn-lg btn-danger btn-block btn-color submit" type="submit" name="btnLogin" value="Login">Entrar</button>
     <input type="checkbox" id="keeplogged" name="keeplogged" value="1" />
-    <label for="keeplogged" class="keeplogged" >Lembrar login</label>
-    
-</form>
-<div class="text-center">
+    <label for="keeplogged" class="keeplogged" >Lembrar-me</label>
+    <label for="esquecisenha" class="esquecisenha" onclick="esquecisenha()">Esqueci minha senha</label>
+    <br><br>
+    <div class="text-center">
     <div>Primeira vez aqui? Cadastre-se!</div>
 </div>
-<button onclick="cadastrar()" class="btn btn-lg btn-danger btn-block btn-color btn-cad" type="submit" name="btnLogin" value="cadastrar">Cadastrar</button>
+<button onclick="cadastrar()" class="btn btn-lg btn-danger btn-block btn-color" type="submit" name="btnLogin" value="cadastrar">Cadastrar</button>
+</form>
     <br>
 <p class="text-center text-danger">
     <?php 
@@ -50,8 +56,6 @@
 
 <div class="col-md">
     <div class="text-center">
-    
-        <!-- <a  onclick="cadastrar()"><span><strong>CADASTRE-SE</strong></span></a> -->
         <div>
             <!--inicio clock-->
             <div class="datetime">
@@ -72,4 +76,3 @@
         </div>
     </div>
 </div>
-

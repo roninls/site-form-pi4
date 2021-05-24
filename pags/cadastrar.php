@@ -84,16 +84,10 @@
     </head>
     
     <body onload="initClock()">
-        <div id="head"></div>
+        <nav id="head"></nav>
         <div class="container">
             <div class="centralizar">
-                <div class="col-md">
-                    <br>                       
-                    <br>                       
-                    <br>                       
-                    <br>                       
-                    <br>                       
-                    <br>                       
+                <div class="col-md">                       
 
                     <form class="form-signin auth_form" name="login" id="loginform" method="post" action="">
 
