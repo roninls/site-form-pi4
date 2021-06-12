@@ -28,10 +28,10 @@
                     if($_SESSION['usuarioNiveisAcessoId'] == "1"){
                         header("Location: ../pags/administrativo.php"); 
                     }elseif($_SESSION['usuarioNiveisAcessoId'] == "2"){
-                        header("Location: ../pags/cliente.php");
+                        header("Location: ../pags/teste/index.php");
                     }
                     else{
-                        header("Location: ../pags/cliente.php");
+                        header("Location: ../pags/teste/index.php");
                     } 
                 }else{
                     $_SESSION['msg'] = "Login ou Senha incorreto!";

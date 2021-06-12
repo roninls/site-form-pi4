@@ -45,7 +45,7 @@
             }
             
             function forum() {
-                window.open("../pags/cliente.php", '_parent');
+                window.open("../pags/teste/index.php", '_parent');
             }
 
             function painel() {
