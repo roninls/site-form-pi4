@@ -713,10 +713,13 @@
 							<h1 id="resultado"></h1>
 		  
 <!-- Grafico -->
-		  <canvas id="myChart" width="200" height="100"></canvas>						
-					<br>
-												<h3 id="resultado-final"></h3>
-							<h4 id="resultado-final2"></h4>					
+		<canvas id="myChart" width="200" height="100"></canvas>
+		<h3 id="resultado-final"></h3>
+		
+		<h4 id="resultado-final2"></h4>
+							
+		<h4>Baseado no resultado do seu teste, essas são áreas que combinam com você:</h4>					
+		<h4 id="resultado-final-areas"></h4>					
 
 </center>
 
@@ -789,34 +792,6 @@
 				
 			</div>
 			
-<!-- Fim resultado / Inicio Box Info (( DESABILITADO )) -->
-<!--
-			<div class="modal fade" id="modal-container-info" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-				<div class="modal-dialog  modal-lg">
-					<div class="modal-content">
-						<div class="modal-header">
-							 
-							<button type="button" class="close" data-dismiss="modal" aria-hidden="true"> × </button>
-							<h4 class="modal-title" id="myModalLabel">Informações Importantes</h4>
-						</div>
-						<div class="modal-body" style="text-align: left;">
-							<ul>
-							<li>Aqui vem umas informações</li>
-							<li>Que talvez sejam interessantes de listar</li>
-							</ul>
-							<p>Para mais informaçoes acesse a <a href="#">Esta página</a>.</p>
-						
-						</div>
-						<div class="modal-footer">
-							 
-						</div>
-					</div>
-					
-				</div>
-				
-			</div>
--->
-
 <br>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.bundle.min.js"></script>

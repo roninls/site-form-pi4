@@ -50,7 +50,7 @@
             $resultado_usuario = mysqli_query($conn, $result_usuario);
             if(mysqli_insert_id($conn)){
                 $_SESSION['msgcad'] = "Usuário cadastrado com Sucesso";
-                header("Location: ../index.php");
+                header("Location: ../inicio.php");
             }else{
                 $_SESSION['msg'] = "Erro ao cadastrar o usuário";
             }
@@ -95,8 +95,8 @@
                             <div class="logo">
                                 <img src="../img/login.png" class="img-fluid img-pointer" width="60%"/>
                                 <ul>
-                                    <li><a class="baixologo" href="../index.php">Home</a></li>
-                                    <li><a class="baixologo" href="../index.php">Login</a></li>
+                                    <li><a class="baixologo" href="../index.html">Home</a></li>
+                                    <li><a class="baixologo" href="../inicio.php">Login</a></li>
                                 </ul>
                             </div>
                         </div>

@@ -4,8 +4,8 @@
         <div class="logo">
             <img src="img/login.png" class="img-fluid img-pointer" width="60%"/>
             <ul>
-                <li><a class="baixologo" href="index.php">Home</a></li>
-                <li><a class="baixologo" href="index.php">Login</a></li>
+                <li><a class="baixologo" href="index.html">Home</a></li>
+                <li><a class="baixologo" href="inicio.php">Login</a></li>
             </ul>
         </div>
     </div>

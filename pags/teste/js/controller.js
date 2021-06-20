@@ -62,6 +62,13 @@ $(document).ready(function() {
 	var descricaoAssimilador = "Você aprende melhor combinando observação e pensamento, por isso suas preferências por palestras, conferências e aulas. Para eles, ideias e conceitos abstratos são mais importantes do que pessoas e pode ser percebido como pouco sociável. Tem facilidade com números e modelos conceituais, preferindo especulações abstratas em detrimento de situações práticas. Compreende as informações de forma ampla e as organizam de forma clara e lógica. Tem propensão para a carreira científica. Gosta de explorar modelos analíticos e de ter tempo para pensar e refletir sobre as coisas. Esse estilo também é conhecido como TEÓRICO.";
 	var descricaoDivergente = "Você aprende melhor combinando sensações com observações, ou seja através de atividades práticas seguidas de um retorno. Possui muita sensibilidade artística e conseguem ver as coisas de perspectivas diferentes. Prefere observar ao invés de agir. Suas estratégias para a solução de problemas iniciam coletando informações para em seguida usarem a criatividade e a inventividade para oferecer mais de uma solução possível. A denominação “divergentes” se dá pelo fato de terem bom desempenho em situações que requerem geração de ideias, como grupos de trabalho e brainstorms. Possuem vasto interesse cultural e gostam de pessoas. Preferem trabalhar em grupo, ouvindo sugestões com mente aberta e recebendo feedbacks pessoais. Gostam de autonomia na busca de conhecimento. Esse estilo também é conhecido como REFLEXIVO.";
 
+	var areastidiv = "Especialistas em HYBRID MULTICLOUD".bold();
+	var areastiass = "SUPORTE TECNICO".bold(); 
+	var areasticon = "ADMINISTRADOR DE BANCO DE DADOS".bold();
+	var areastiaco = "PROGRAMADOR".bold();
+
+
+
 //RESULTADO 
 
 	$("#botao").click(function() {					
@@ -697,19 +704,19 @@ $(document).ready(function() {
 				function descobrirEstilo() {
 
 							if (resultadosomas == divergente) {
-								estilo = "DIVERGENTE"
+								estilo = "DIVERGENTE";
 							}
 
 							if (resultadosomas == assimilador) {
-								estilo = "ASSIMILADOR" 
+								estilo = "ASSIMILADOR";
 							}
 
 							if (resultadosomas == convergente) {
-								estilo = "CONVERGENTE" 
+								estilo = "CONVERGENTE";
 							}
 
 							if (resultadosomas == acomodador) {
-								estilo = "ACOMODADOR"
+								estilo = "ACOMODADOR";
 							}
 				}
 				
@@ -717,31 +724,35 @@ $(document).ready(function() {
 
 //RESULTADOS
 
-				document.getElementById("resultado-final").innerHTML = " Seu estilo de aprendizagem predominante é " + estilo;
+				document.getElementById("resultado-final").innerHTML = " Seu estilo de aprendizagem predominante é " + estilo.bold();
 					var forma1 = "concreta";
 					var forma2 = "reflexiva";
 					if (ap1 > 0) {
 						forma1 = "abstrata";
 					}
 					if (ap2 > 0) {
-						forma2 = "ativa"
+						forma2 = "ativa";
 					}
-				document.getElementById("resultado-final2").innerHTML = " Sua forma de aprender é " + forma1 + " e " + forma2;
+				document.getElementById("resultado-final2").innerHTML = " Sua forma de aprender é " + forma1.bold() + " e " + forma2.bold();
 
 			//Resultado da descricao
 
 				if (estilo == "CONVERGENTE") {
 					document.getElementById("resultado-descricao").innerHTML = descricaoConvergente;
+					document.getElementById("resultado-final-areas").innerHTML = areasticon;
 				}
 
 				if (estilo == "ACOMODADOR") {
 					document.getElementById("resultado-descricao").innerHTML = descricaoAcomodador;
+					document.getElementById("resultado-final-areas").innerHTML = areastiaco;
 				}
 				if (estilo == "ASSIMILADOR") {
 					document.getElementById("resultado-descricao").innerHTML = descricaoAssimilador;
+					document.getElementById("resultado-final-areas").innerHTML = areastiass;
 				}
 				if (estilo == "DIVERGENTE") {
 					document.getElementById("resultado-descricao").innerHTML = descricaoDivergente;
+					document.getElementById("resultado-final-areas").innerHTML = areastidiv;
 				}
 
 		}

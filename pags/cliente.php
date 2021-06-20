@@ -4,7 +4,7 @@
 
     }else{
         $_SESSION['msg'] = "Área Restrita";
-        header("Location: ../login.php");
+        header("Location: ../inicio.php");
     }
 
     if($_SESSION['usuarioNiveisAcessoId'] == "1"){
