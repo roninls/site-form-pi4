@@ -103,7 +103,7 @@
                         <br><br>
                         
                         <label for="inputEmail" class="sr-only">Nome</label>
-                        <input type="text" name="nome" id="nome" class="form-control" required="required" maxlength="20" pattern="[A-Za-z0-9_?]{1,20}" placeholder="Nome" autofocus="autofocus" />
+                        <input type="text" name="nome" id="nome" class="form-control" required="required" maxlength="20" pattern="[A-Za-z0-9_ ]{1,20}" placeholder="Nome" autofocus="autofocus" />
                         <label for="inputEmail" class="sr-only">Email</label>
                         <input type="text" name="email" id="email" class="form-control" required="required" maxlength="50" placeholder="E-mail" autofocus="autofocus" />
                         <label for="inputPassword" class="sr-only">Senha</label>

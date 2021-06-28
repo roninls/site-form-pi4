@@ -62,7 +62,7 @@ footer {
           box-sizing: border-box;
   padding: 10px;
   font-size: 16px;
-  color: #343434!important;
+  color: white!important;
   font-weight: bold;
 }
 .form-signin .form-control:focus {
@@ -90,7 +90,7 @@ input[type="text"]:valid, input[type="password"]:valid {
 	border-right-style: solid;
   border-right-width: 3px;
 	border-color: #67d00b;
-	background-color: dimgray;
+	background-color: #272727;
 }
 
 
@@ -101,7 +101,7 @@ input[type="text"]:invalid, input[type="password"]:invalid {
 	border-right-style: solid;
 	border-right-width: 3px;
 	border-color: red;
-	background-color: dimgray;
+	background-color: #272727;
 }
 
 input #keeplogged {
@@ -109,7 +109,7 @@ input #keeplogged {
 }
 
 ::placeholder{
-  color: #343434!important;
+  color: white!important;
 	font-weight: bold;
 }
 
@@ -183,6 +183,7 @@ input #keeplogged {
 .btn-color{
   background-color: #272727;
   border-color: #272727;
+  color: white;
 }
 
 .btn-color:hover{
@@ -304,7 +305,7 @@ input #keeplogged {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
   margin-bottom: 20px;
-	background-color: dimgray;
+	background-color: #272727;
 }
 
 .custom-select-genero {
@@ -324,16 +325,16 @@ input #keeplogged {
   width: 0;
   height: 0;
   border: 6px solid transparent;
-  border-color: #343434 transparent transparent transparent;
+  border-color: white transparent transparent transparent;
 }
 
 .select-selected.select-arrow-active:after {
-  border-color: transparent transparent #343434 transparent;
+  border-color: transparent transparent white transparent;
   top: 12px;
 }
 
 .select-items div,.select-selected {
-  color: #343434;
+  color: white;
   padding: 8px 16px;
   border: 1px solid transparent;
   border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
@@ -342,7 +343,7 @@ input #keeplogged {
 
 .select-items {
   position: absolute;
-  background-color: dimgray;
+  background-color: #272727!important;
   top: 100%;
   left: 0;
   right: 0;

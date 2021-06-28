@@ -26,7 +26,7 @@
     <input type="text" name="email" id="email" class="form-control" required="required" maxlength="50" placeholder="E-mail" autofocus="autofocus" />
     <label for="inputPassword" class="sr-only">Senha</label>
     <input type="password" name="password" id="password" class="form-control" placeholder="Password" required="required" maxlength="100" pattern=".{6,100}" />
-    <button class="btn btn-lg btn-danger btn-block btn-color submit" type="submit" name="btnLogin" value="Login">Entrar</button>
+    <button class="btn btn-lg btn-block btn-color submit" type="submit" name="btnLogin" value="Login">Entrar</button>
     <input type="checkbox" id="keeplogged" name="keeplogged" value="1" />
     <label for="keeplogged" class="keeplogged" >Lembrar-me</label>
     <label for="esquecisenha" class="esquecisenha" onclick="esquecisenha()">Esqueci minha senha</label>
@@ -34,7 +34,7 @@
     <div class="text-center">
     <div>Primeira vez aqui? Cadastre-se!</div>
 </div>
-<button onclick="cadastrar()" class="btn btn-lg btn-danger btn-block btn-color" type="submit" name="btnLogin" value="cadastrar">Cadastrar</button>
+<button onclick="cadastrar()" class="btn btn-lg btn-block btn-color" type="submit" name="btnLogin" value="cadastrar">Cadastrar</button>
 </form>
     <br>
 <p class="text-center text-danger">
